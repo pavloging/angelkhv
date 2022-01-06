@@ -1,0 +1,56 @@
+@media all and (max-device-width: 992px) {
+    #bg{
+        background-image: url(../img/Contact/photo4.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .box{
+        width: 350px;
+        padding: 50px;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+    .box h1{
+        font-size: 1.6vw;
+    }
+    .contact-adres h2{
+        font-size: 1.8vw;
+    }
+    .contact-adres p,a{
+        font-size: 1.5vw;
+    }
+}
+@media all and (max-device-width: 767px) {
+    #bg{
+        background-size: 120%;
+    }
+    .contact-all{
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    .contact-adres h2{
+        font-size: 1.9vw;
+    }
+    .contact-adres p,a{
+        font-size: 1.6vw;
+    }
+    .box input[type = "email"], .box input[type = "name"], .box input[type = "text"], .box input[type = "tel"], .box textarea[name = "text"] {
+        margin: 20px auto;
+        padding: 20px 12px;
+        width: 250px;
+    }
+}
+@media all and (max-device-width: 480px) {
+    .contact-all{
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+    .contact-adres h2{
+        font-size: 2vw;
+    }
+    .contact-adres p,a{
+        font-size: 1.7vw;
+    }
+}

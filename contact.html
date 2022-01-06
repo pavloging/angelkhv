@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Салон красоты Ангел</title>
+    <link rel="shortcut icon" href="/img/Header/header.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/src/css/contact.css">
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/media/media_contact.css">
+    <link rel="stylesheet" type="text/css" href="/media/media_style.css">
+</head>
+<body>
+
+    <!--header-->
+    <div id="fix-header"></div>
+    <div id="headerMain"></div>
+
+    <!--content-->
+    <content>
+        <div id="bg">
+        <div class="contact-all">
+            <img src="/img/Contact/book.webp" width="100%" alt="">
+                <div class="contact-adres">
+                    <div id="adres">
+                        <h2>Хабаровск</h2>
+                        <p>ул. Чехова, 2</p>
+                        <p>Мы работаем каждый день: с 10:00 до 20:00</p>
+                            <p>Городской - <a href="tel:+7421273-17-61">8 (421) 273-17-61</a></p>
+                            <p>Сотовый - <a href="tel:+79141583596"> 8 (914) 158-35-96</a></p>
+                            <p>Сотовый - <a href="tel:+203596">20-35-96</a></p>
+                            <p>Городской - <a href="tel:+731761">73-17-61</a></p>
+                    </div>
+                </div>
+        </div>
+
+        <div class="conent-contact">
+
+            <div class="box">
+                <form id="form" method="post" action="/src/php/send.php">
+                    <h1>Запись на стрижку</h1>
+                    <input      type="email"name="email" placeholder="Введите email" class="form-control" required><br>
+                    <input      type="name" name="name" placeholder="Введите имя" class="form-control" required><br>
+                    <input      type="tel" name="tel" placeholder="Введите телефон" class="form-control" required><br>
+                    <textarea   type="text" name="text" placeholder="Введите Сообщение" class="form-control" required></textarea><br>
+                    <button     type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </content>
+
+    <style>
+        .navigation{
+            background-color: #09100D;
+        }
+        .menu span, .menu span:before, .menu span:after{
+            background-color: #FDFDFD;
+        }
+        .container h2{
+            color: #FDFDFD;
+        }
+        .container p{
+            color: #FDFDFD;
+        }
+    </style>
+
+    <!-- footer -->
+    <div id="footerMain"></div>
+
+    <!-- Script -->
+
+    <!-- Constants -->
+    <script src="/src/js/root.js"></script>
+
+    <!-- header -->
+    <script src="/src/js/headerMain.js"></script>
+
+    <!-- footer -->
+    <script src="/src/js/footerMain.js"></script>
+
+    <!-- scrollTop -->
+    <div id="scrollTop" onclick="goUp();"></div>
+    <script src="/src/js/script.js"></script>
+
+    <!-- topNav -->
+    <script src="/src/js/topNav.js"></script>
+
+</body>
+</html>

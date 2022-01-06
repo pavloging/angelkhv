@@ -1,0 +1,13 @@
+body{
+    background-color: #09100D;
+}
+.shop-tab{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 5%;
+    text-align: center;
+}
+.shop-tab img{
+    width: 35%;
+}

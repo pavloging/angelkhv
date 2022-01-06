@@ -1,0 +1,265 @@
+@media all and (max-device-width: 1500px) {
+    a,p{
+        font-weight: 500;
+        font-size: inherit;
+    }
+}
+@media all and (max-device-width: 1200px) {
+    .footerText a{
+        font-size: 1.3vw;
+    }
+    h1{
+        font-size: 2vw;
+    }
+    h2{
+        font-size: 2.1vw;
+    }
+    .footerImg img{
+        min-width: 20px;
+        width: 5%;
+    }
+    #vk, #inst{
+        min-width: 20px;
+        width: 3%;
+    }
+}
+@media all and (max-device-width: 992px) {
+    .footerText a{
+        font-size: 1.4vw;
+    }
+    h1{
+        font-size: 1.6vw;
+    }
+    h2{
+        font-size: 1.7vw;
+    }
+
+    .footerImg img{
+        min-width: 12px;
+        width: 5%;
+    }
+}
+@media all and (max-device-width: 767px) {
+    .headerImg{
+        margin-right: 5%;
+    }
+    body header{
+        display: none;
+    }
+    #fix-header{
+        background: none;
+    }
+    .footerText a{
+        font-size: 1.8vw;
+    }
+    h2{
+        font-size: 2.5vw;
+    }
+    footer{
+        padding-top: 25px;
+    }
+    .footerText{
+        padding: 2%;
+    }
+    .footerText a{
+        justify-content: center;
+        padding: 2%;
+        display: flex;
+    }
+    #footerNamer{
+        padding-bottom: 25px;
+    }
+    .footerImg img{
+        min-width: 13px;
+        width: 5.7%;
+    }
+
+    /*topNav*/
+    .navigation{
+        background-color: #09100D;
+        position: static;
+        opacity: 1;
+        display: flex;
+    }
+    .container {
+        margin-right: 10%;
+        display: block;
+        margin-top: 10%;
+        flex-grow: 1;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .container h2{
+        padding:1em;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size:3vw;
+        letter-spacing: -0.05em;
+        transition: 3s;
+    }
+    .container p{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size:2.5vw;
+        letter-spacing: -0.05em;
+    }
+    
+    /*topNav opacity*/
+    .menu {
+        margin: 25px;
+    }
+    .menu span {
+        margin: 0 auto;
+        position: relative;
+        top: 12px;
+    }
+    .menu span:before, .menu span:after {
+        position: absolute;
+        content: '';
+    }
+    .menu span, .menu span:before, .menu span:after {
+        width: 30px;
+        height: 6px;
+        background-color: #FFF;
+        display: block;
+    }
+    .menu span:before {
+        margin-top: -12px;
+    }
+    .menu span:after {
+        margin-top: 12px;
+    }
+
+    /*Fake-Trigger*/
+    #sized {
+        width:60px;
+        height:50px;
+        color:transparent;
+        background-color: transparent;
+        border: transparent;
+
+        animation-name: black-full;
+        animation-duration: 2s;
+    }
+
+    @keyframes black-full {
+        0% {
+            transform: rotate(0);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    /*topNav-Box*/
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%;
+        overflow: auto;
+        opacity: 0.95;
+        transition: 3s linear;
+    }
+    .modal-content {
+        position: relative;
+        margin: auto;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        background-color: #09100D;
+    }
+    .modal-header {
+        padding: 2px 16px;
+        background-color: #09100D;
+        border-bottom: none;
+        height:35vh;
+        animation-name: modal-header;
+        animation-duration: 1s;
+    }
+    @keyframes modal-header {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+      }
+    .modal-body {
+        padding: 2px 16px;
+        background-color: #09100D;
+    }
+    .modal-body.nav {
+        animation-name: modal-body;
+        animation-duration: 1s;
+    }
+    @keyframes modal-body {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    .close {
+        color: rgb(255, 255, 255);
+        float: left;
+        font-size: 5em;
+        font-weight: bold;
+        opacity: 1;
+    }
+    .close:hover,
+    .close:focus {
+        color: #B64926;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /*topNav Styling text*/
+    .modal-body.nav a:hover{
+        text-decoration: none;
+        color: #bebebe;
+    }
+    .modal-body.nav ul li a{
+        padding:1em;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size:3vw;
+        letter-spacing: -0.05em;
+    }
+    .modal-body.nav ul li{
+        font-size: 3em;
+        padding: 0.5vh;
+    }
+    .modal-body.nav ul{
+        clear: both;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media all and (max-device-width: 480px) {
+    #footerNamer a{
+        font-size: 2.5vw;
+    }
+    .footerText a{
+        font-size: 2.5vw;
+    }
+    p,a{
+        font-size: 2vw;
+    }
+
+    .modal-body.nav ul li a{
+        padding:0;
+        font-size:4vw;
+        padding-bottom: 5%;
+    }
+    .modal-body.nav ul li{
+        font-size: 3em;
+        padding: 0.5vh;
+    }
+    .modal-body.nav a {
+        display: grid;
+    }
+    .footerImg img {
+        min-width: 13px;
+        width: 6.3%;
+    }
+}
