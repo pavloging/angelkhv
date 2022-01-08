@@ -1,0 +1,198 @@
+.action_basket{
+    position: fixed;
+    top: 20px;
+    right: 100px;
+}
+.action_basket .profile_basket{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #cecece;
+    overflow: hidden;
+    cursor: pointer;
+}
+.action_basket .profile_basket img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header-container img{
+    height: 40px;
+}
+.action_count .profile_count{
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    margin-right: 100px;
+    margin-top: 20px;
+    border-radius: 50%;
+    background-color: #cecece;
+    overflow: hidden;
+    cursor: pointer;
+}
+#count{
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 103px;
+    margin-top: 22px;
+    object-fit: cover;
+    font-size: 0.7em;
+    font-weight: 700;
+}
+
+/*Produsts*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.action{
+    position: fixed;
+    top: 20px;
+    right: 30px;
+}
+.action .profile{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.action .profile img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.action .menu{
+    position: absolute;
+    top: 120px;
+    right: -10px;
+    padding: 10px 20px;
+    background: #fff;
+    width: 200px;
+    box-sizing: 0 5px 25px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+.action .menu.active{
+    top: 80px;
+    visibility: visible;
+    opacity: 1;
+    box-shadow: var(--box-shadow);
+}
+.action .menu::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 28px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+}
+.action .menu h3{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 0;
+    font-weight: 500;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.2em;
+}
+.action .menu h3 span{
+    font-size: 14px;
+    color: #cecece;
+    font-weight: 400;
+}
+.action .menu ul li{
+    list-style: none;
+    padding: 10px 0;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+}
+.action .menu ul li img{
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: 10px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.action .menu ul li:hover img{
+    opacity: 1;
+}
+.action .menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.5s;
+    font-size: 0.8em;
+}
+.action .menu ul li:hover a{
+    color: #ff5d94;
+}
+@media all and (max-device-width: 767px) {
+    .profile_count{
+        right: 10px;
+    }
+    #count{
+        right: 10px;
+    }
+    .action_basket .profile_basket {
+        right: 10px;
+        width: 70px;
+        height: 70px
+    }
+    .action .profile {
+        width: 70px;
+        height: 70px
+    }
+    .action_count .profile_count {
+        right: 10px;
+    }
+    .action .menu.active{
+        left: -150px;
+    }
+}
+
+@media all and (max-device-width: 480px) {
+    .profile_count{
+        right: 40px;
+    }
+    #count{
+        right: 45px;
+    }
+    .action_basket .profile_basket {
+        right: 40px;
+        width: 100px;
+        height: 100px
+    }
+    .action .profile {
+        width: 100px;
+        height: 100px
+    }
+    .action_count .profile_count {
+        right: 44px;
+    }
+    .action .menu.active{
+        top: 90px;
+        left: -135px;
+    }
+}

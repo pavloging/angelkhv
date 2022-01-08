@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+:root {
+  --color-light: #f8f9fa;
+  --color-white: white;
+  --color-unaccent: #808080;
+  --color-medium: #e8e8e8;
+  --color-dark: #a1a1a1;
+
+  --spacing-smail: 10px;
+  --spacing-medium: 15px;
+  --spacing-large: 30px;
+
+  --border-radius: 4px;
+
+  --linear-gradient: linear-gradient(
+    to right,
+    #f090c6,
+    #f75bb3,
+    #fc37a6,
+    #f51e98,
+    #ff0090
+  );
+  --box-shadow: 0 16px 24px 2px rgba(33, 37, 41, 0.02),
+    0 6px 30px 5px rgba(33, 37, 41, 0.04), 0 8px 10px -5px rgba(33, 37, 41, 0.1);
+}
+/* HEADER */
+body header {
+  background-color: #09100d;
+  text-align: center;
+  padding-bottom: 1%;
+}
+.headerText {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 8%);
+  gap: 15%;
+}
+.headerText certificate,
+.headerText shop {
+  margin-top: -60%;
+}
+.headerText certificate {
+  margin-left: 40%;
+}
+.headerText shop {
+  margin-right: 100%;
+}
+.headerText contact,
+.headerText service {
+  margin-top: -40%;
+}
+.headerText index {
+  margin-top: -10%;
+}
+
+/* topNav */
+.navigation {
+  opacity: 0;
+  position: absolute;
+}
+.modal-body.nav a {
+  font-size: 0;
+}
+.header-hide {
+  position: absolute;
+}
+/*Font*/
+a {
+  font-family: system-ui;
+  color: #fdfdfd;
+  text-decoration: none; /*Убираем подчёркивание текста*/
+  font-size: 1.1vw;
+  transition: all 0.6s ease;
+}
+p {
+  font-family: system-ui;
+  color: #09100d;
+  text-decoration: none; /*Убираем подчёркивание текста*/
+  font-size: 1vw;
+}
+a:hover {
+  /*Меняет цвет при наведении*/
+  text-decoration: none;
+  color: #ff0588;
+  transition: all 0.4s ease;
+}
+h2 {
+  font-family: system-ui;
+  font-size: 1.5vw;
+}
+content div#content div#girl p,
+div#child p,
+div#shop p {
+  text-align: center;
+}
+#network:hover {
+  color: #fdfdfd;
+}
+figcaption {
+  font-family: system-ui;
+  font-size: 95%;
+  color: #000000;
+}
+footer {
+  background-color: #09100d;
+  padding-top: 50px;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.footerText {
+  padding: 4%;
+  text-align: center;
+  border-top: 0.5px solid rgb(255, 255, 255);
+}
+.footerText a {
+  padding: 4%;
+}
+#footerNamer {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.footerImg {
+  padding: 15px;
+  text-align: center;
+  border-top: 0.5px solid rgb(255, 255, 255);
+  border-radius: 0%;
+}
+
+/*Изменения скорлла*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-dark);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--color-white);
+}
