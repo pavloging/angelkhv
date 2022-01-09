@@ -119,7 +119,7 @@ footer {
   border-top: 0.5px solid rgb(255, 255, 255);
 }
 .footerText a {
-  padding: 4%;
+  margin: 4%;
 }
 #footerNamer {
   text-align: center;
