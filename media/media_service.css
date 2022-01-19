@@ -1,0 +1,19 @@
+@media all and (max-device-width: 767px) {
+  .menu span,
+  .menu span:before,
+  .menu span:after {
+    background-color: #fdfdfd;
+  }
+}
+/* @media all and (max-device-width: 480px) {
+  #women {
+    background-attachment: inherit;
+  }
+  #men {
+    background-attachment: inherit;
+  }
+  #children {
+    background-attachment: inherit;
+  }
+} */
+/* разкомментирую если не бужет работать ios проверка  */

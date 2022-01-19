@@ -1,0 +1,85 @@
+/*CONTACT-CONTENT*/
+#background {
+  background-size: cover;
+  background-image: url(/img/Contact/contactD.webp);
+}
+.title {
+  height: 70vh;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-shadow: 1px 1px black;
+}
+.title h1,
+h2 {
+  color: #fdfdfd;
+}
+.title a {
+  color: #ff018c;
+}
+.title a:hover {
+  color: #b61c71;
+}
+.title h2 {
+  line-height: 50px;
+}
+
+/*for form WhatsApp*/
+.box {
+  background-color: #09100d;
+  width: 90%;
+  padding: 5%;
+  text-align: center;
+}
+.box h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.box input[type="text"],
+.box input[type="phone"],
+.box textarea[name="text"] {
+  font-size: 18px;
+  font-family: system-ui;
+  border: 0;
+  background: none;
+  display: block;
+  margin: 15px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type="text"]:focus,
+.box input[type="phone"]:focus,
+.box textarea[name="text"]:focus {
+  font-family: system-ui;
+  width: 280px;
+  border-color: #2ecc71;
+  background-color: #2ecc71; /* Цвет фона */
+}
+.box button[type="button"] {
+  font-size: 18px;
+  font-family: system-ui;
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box button[type="button"]:hover {
+  background: #2ecc71;
+  box-shadow: 0 0 10px #2ecc71, 0 0 40px #2ecc71, 0 0 80px #2ecc71;
+}

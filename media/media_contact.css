@@ -1,0 +1,40 @@
+@media all and (max-device-width: 992px) {
+  a {
+    font-size: 1.5vw;
+  }
+}
+@media all and (max-device-width: 767px) {
+  #background {
+    background-size: cover;
+    background-image: url(/img/Contact/contactM.jpg);
+  }
+  .title {
+    display: block;
+    padding-top: 20%;
+    line-height: 90px;
+    padding-left: 10%;
+  }
+  a {
+    font-size: 1.6vw;
+  }
+}
+@media all and (max-device-width: 480px) {
+  .title {
+    display: block;
+    padding-top: 20%;
+    line-height: 120px;
+    padding-left: 10%;
+  }
+  .title h2 {
+    line-height: 80px;
+  }
+  .title h1 {
+    font-size: 4vw;
+  }
+  .title h2 {
+    font-size: 4vw;
+  }
+  .title a {
+    font-size: 4vw;
+  }
+}

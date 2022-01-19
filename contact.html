@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Салон красоты Ангел</title>
+    <link
+      rel="shortcut icon"
+      href="/img/Header/header.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" type="text/css" href="/src/css/contact.css" />
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/media/media_contact.css" />
+    <link rel="stylesheet" type="text/css" href="/media/media_style.css" />
+  </head>
+  <body>
+    <div id="fix-header"></div>
+    <div id="headerMain"></div>
+
+    <div id="background">
+      <div class="container">
+        <div class="title">
+          <h1>Хабаровск, ул. Чехова, 2</h1>
+          <h1>
+            Мы работаем каждый день:<br />
+            с 10:00 до 20:00
+          </h1>
+          <h2>
+            <br />
+            Городской - <a href="tel:+74212731761">8 (421)273-17-61</a> <br />
+            Сотовый - <a href="tel:+79141583596">8 (914) 158-35-96</a><br />
+            Сотовый - <a href="tel:+203596">20-35-96</a><br />
+            Городской - <a href="tel:+731761">73-17-61</a><br />
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <form id="form" method="POST" action="mail.php">
+        <h1>ЗАПИСЬ</h1>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Введите имя"
+          class="form-control"
+          required
+        /><br />
+        <input
+          type="phone"
+          id="phone"
+          name="phone"
+          placeholder="Введите телефон"
+          class="form-control"
+          required
+        /><br />
+        <textarea
+          name="text"
+          id="text"
+          placeholder="Введите сообщение"
+          class="form-control"
+          required
+        ></textarea
+        ><br />
+        <button type="button" onclick="setFormSend()">Отправить</button>
+      </form>
+    </div>
+
+    <div id="footerMain"></div>
+  </body>
+  <script>
+    const name = document.getElementById("name");
+    const phone = document.getElementById("phone");
+    const text = document.getElementById("text");
+
+    function setFormSend() {
+      if (name.value !== "" && phone.value !== "" && text.value !== "") {
+        if (phone.value.length === 11) {
+          let message = `Добрый день, меня зовут: ${name.value}, мой номер телефона: ${phone.value}. Вот моё сообщение: ${text.value}`;
+          let WhatsApp = `https://wa.me/79143799898/?text=${message}`;
+          location.href = WhatsApp;
+        } else {
+          alert("Номер должен содержать 11 цифр.");
+        }
+      } else {
+        alert("Пожалуйста, заполните все поля.");
+      }
+    }
+  </script>
+  <!-- Script -->
+
+  <!-- Constants -->
+  <script src="/src/js/root.js"></script>
+
+  <!-- header -->
+  <script src="/src/js/headerMain.js"></script>
+
+  <!-- footer -->
+  <script src="/src/js/footerMain.js"></script>
+
+  <!-- scrollTop -->
+  <div id="scrollTop" onclick="goUp();"></div>
+  <script src="/src/js/script.js"></script>
+
+  <!-- topNav -->
+  <script src="/src/js/topNav.js"></script>
+</html>
