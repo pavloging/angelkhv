@@ -78,7 +78,7 @@ class Shopping {
                   <td class="shopping-element__name">💥 Пожалуйста, выберите товар</td>
                   <tr>
                     <td>
-                    <a href="https://wa.me/79143799898/?text=Добрый день, я с сайта angelkhv.ru, я хочу " target="_blank" style="
+                    <a href="https://wa.me/79143799898/?text="Добрый день, я с сайта angelkhv.ru, я хочу " target="_blank" style="
                     color: #000;
                     font-size: inherit;
                     font-weight: bold;
