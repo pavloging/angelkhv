@@ -49,7 +49,7 @@ class Shopping {
                       <td class="shopping-element__price">${sumCatalog} RUB</td>
                       <tr>
                         <td>
-                        <a href="https://wa.me/79143799898/?text=Добрый день, я с сайта angelkhv.ru, я хочу приобрести: ${idElement}" target="_blank" style="
+                        <a href="https://wa.me/79147774577/?text=Добрый день, я с сайта angelkhv.ru, я хочу приобрести: ${idElement}" target="_blank" style="
                         color: #000;
                         font-size: inherit;
                         font-weight: bold;
