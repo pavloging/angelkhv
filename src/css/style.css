@@ -84,12 +84,6 @@ body header {
 }
 #img-header {
   border-radius: 10%;
-  transition: 2s;
-}
-#img-header:hover {
-  border-radius: 40%;
-  box-shadow: 0 0 10px #ff018b, 0 0 40px #ff018b, 0 0 80px #ff018b;
-  transition: 2s;
 }
 #inst:hover {
   filter: brightness(50%);
